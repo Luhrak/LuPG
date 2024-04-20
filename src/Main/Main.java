@@ -2,6 +2,7 @@ package Main;
 
 import java.util.Scanner;
 import Classes.*;
+import NPC.*;
 
 public class Main {
 
@@ -17,8 +18,9 @@ public class Main {
 
 			switch (userInput().toLowerCase()) {
 
+			case "w":
 			case "warrior":
-				player = new Warrior();
+				player = new Warrior(pName);
 				break;
 
 			default:
@@ -27,12 +29,16 @@ public class Main {
 			}
 			break;
 		}
-
-		player.name = pName;
 		
 		System.out.println(player.slots[0]);
 		System.out.println(player.inventory.get(0).toString());
 		
+		Enemy wolf1 = new Wolf();
+		System.out.println(wolf1.health);
+		
+		wolf1.attack(player);
+		System.out.println(player.health);
+
 
 	}
 

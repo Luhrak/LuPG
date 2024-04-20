@@ -1,6 +1,4 @@
-package Classes;
-
-import Inventory.Item;
+package Inventory;
 
 public class Potion extends Item {
 

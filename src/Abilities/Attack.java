@@ -1,5 +1,7 @@
 package Abilities;
 
+import Classes.Player;
+
 public class Attack extends Ability {
 
 	public String name;
@@ -12,6 +14,12 @@ public class Attack extends Ability {
 	
 	public String toString() {
 		return name + " (" + damage + ")";
+	}
+
+	@Override
+	public void use(Player player) {
+		player.calcDamage(this.damage);
+		
 	}
 	
 }

@@ -30,6 +30,9 @@ public class Main {
 			break;
 		}
 		
+		
+		
+		
 //		System.out.println(player.slots[0]);
 //		System.out.println(player.inventory.get(0).toString());
 		System.out.println("Player health: " + player.health);
@@ -43,6 +46,7 @@ public class Main {
 		System.out.println("Wolf health after attack: " + wolf1.health);
 
 
+		
 	}
 
 	private static String userInput() {

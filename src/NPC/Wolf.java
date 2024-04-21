@@ -1,7 +1,6 @@
 package NPC;
 
 import Abilities.Attack;
-import Classes.Player;
 
 public class Wolf extends Enemy {
 

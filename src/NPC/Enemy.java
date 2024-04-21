@@ -3,7 +3,6 @@ package NPC;
 import java.util.ArrayList;
 import java.util.List;
 import Abilities.Ability;
-import Classes.Player;
 import Inventory.Item;
 
 public abstract class Enemy implements Actor {

@@ -30,14 +30,17 @@ public class Main {
 			break;
 		}
 		
-		System.out.println(player.slots[0]);
-		System.out.println(player.inventory.get(0).toString());
+//		System.out.println(player.slots[0]);
+//		System.out.println(player.inventory.get(0).toString());
+		System.out.println("Player health: " + player.health);
 		
 		Enemy wolf1 = new Wolf();
-		System.out.println(wolf1.health);
+		System.out.println("Wolf health: " + wolf1.health);
 		
 		wolf1.attack(player);
-		System.out.println(player.health);
+		player.attack(wolf1);
+		System.out.println("Player health after attack: " + player.health);
+		System.out.println("Wolf health after attack: " + wolf1.health);
 
 
 	}

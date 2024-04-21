@@ -12,8 +12,8 @@ public class Wolf extends Enemy {
 	}
 
 	@Override
-	public void attack(Player player) {
-		this.slots[0].use(player);
+	public void attack(Actor actor) {
+		this.slots[0].use(actor);
 		
 	}
 

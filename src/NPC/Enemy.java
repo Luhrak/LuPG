@@ -6,7 +6,7 @@ import Abilities.Ability;
 import Classes.Player;
 import Inventory.Item;
 
-public abstract class Enemy {
+public abstract class Enemy implements Actor {
 	
 	public String name;
 	public int maxhealth;
@@ -20,5 +20,10 @@ public abstract class Enemy {
 		health = maxhealth;
 	}
 
-	public abstract void attack(Player player);
+	public abstract void attack(Actor actor);
+	
+	public void calcDamage(int damage) {
+		health -= damage;
+	}
+	
 }

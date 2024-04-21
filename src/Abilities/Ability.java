@@ -1,10 +1,10 @@
 package Abilities;
 
-import Classes.Player;
+import NPC.Actor;
 
 public abstract class Ability {
 
-	public abstract void use(Player player);
+	public abstract void use(Actor actor);
 
 
 }

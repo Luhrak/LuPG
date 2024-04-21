@@ -1,6 +1,6 @@
 package Abilities;
 
-import Classes.Player;
+import NPC.Actor;
 
 public class Attack extends Ability {
 
@@ -17,8 +17,8 @@ public class Attack extends Ability {
 	}
 
 	@Override
-	public void use(Player player) {
-		player.calcDamage(this.damage);
+	public void use(Actor actor) {
+		actor.calcDamage(this.damage);
 		
 	}
 	
